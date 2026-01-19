@@ -29,21 +29,25 @@ body {
   font-style: normal;
 }
 
-/* ===== Petition banner styles ===== */
+/* ===== Banner styles ===== */
 
-#petitionBannerContainer {
+.top-banner {
   background-color: black;
   color: white;
   height: 7dvh;
-  @media (max-width: 768px) {
-    
-  }
-  @media (min-width: 768px) {
-    
-  }
 }
 
-#petitionBannerContainer a { color: $monochromatic-color; }
+#municipalCampaignBannerContainer {
+  background-color: white;
+  color: black;
+}
+
+header .top-banner:nth-child(1) {
+  border-bottom: 0.15rem solid;
+  border-color: $monochromatic-color;
+}
+
+.top-banner a { color: $monochromatic-color; }
 
 /* ===== Header and nav menu styles ===== */
 
@@ -53,7 +57,7 @@ body {
   background-color: $header-bg-color; 
   
   @media (min-width: 768px) {
-    height: 29dvh;
+    height: 36dvh;
   }
 }
 
@@ -70,7 +74,7 @@ body {
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   position: absolute;
-  top: 10dvh;
+  top: 16dvh;
   left: 1rem;
   padding: 1rem;
 }
@@ -463,7 +467,12 @@ h1, h2, h3 {
   color: white;
 }
 
-#summerCampaign2025LeadingContainer .leading-text,
+#summerCampaign2025LeadingContainer .leading-text {
+  @media (min-width: 768px) {
+    margin-top: 2rem;
+  }
+}
+
 #peticiyaLeadingContainer .leading-text {
   @media (min-width: 768px) {
     margin-top: 3rem;

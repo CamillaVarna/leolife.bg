@@ -31,7 +31,15 @@
   </head>
   <body>
     <header class="page-header monochromatic-thick-bottom-border">
-        <div id="petitionBannerContainer" class="container-fluid p-2 m-0 text-center">
+        <div id="municipalCampaignBannerContainer" class="container-fluid top-banner p-2 m-0 text-center">
+            {% if page.language == "en" %}
+            <a href="https://www.facebook.com/leolife.bg/posts/pfbid02BuvETn2zNKWchec2iow9KJ3CAwbvUijB9tAdJNjoBBQKCHbzQH2o4we7zXWuxEF5l" target="_blank"><span class="d-none d-md-inline">Ongoing small m</span><span class="d-md-none">M</span>unicipal neutering campaign<span class="d-md-none">!</span></a><span class="d-none d-md-inline"> starting 5 Jan 2026 - click for info!</span>
+            {% else %}
+            <a href="https://www.facebook.com/leolife.bg/posts/pfbid02BuvETn2zNKWchec2iow9KJ3CAwbvUijB9tAdJNjoBBQKCHbzQH2o4we7zXWuxEF5l" target="_blank"><span class="d-none d-md-inline">Малка о</span><span class="d-md-none">О</span>бщинска кастрационна кампания<span class="d-md-none">!</span></a><span class="d-none d-md-inline"> от 5 яну 2026 - кликни за информация!</span>
+            {% endif %}
+        </div>
+
+        <div id="petitionBannerContainer" class="container-fluid top-banner p-2 m-0 text-center">
             {% if page.language == "en" %}
             <a href="https://www.openpetition.eu/bg/petition/online/masova-obsinska-kastracia-na-ulicnite-kotki-vv-varna-za-edin-po-dobr-grad-za-horata-i-za-kotkite" target="_blank">Sign our petition<span class="d-md-none">!</span></a><span class="d-none d-md-inline"> for a municipal mass neutering programme for the street cats in Varna!</span>
             {% else %}
