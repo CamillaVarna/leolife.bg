@@ -30,6 +30,10 @@ body {
   font-style: normal;
 }
 
+small.absolute {
+  font-size: 0.875rem;
+}
+
 /* ===== Petition banner styles ===== */
 
 #topBannerContainer {
@@ -668,6 +672,10 @@ ol.borderless > li, ul.borderless > li {
 ol.list-group-even-more-flush > li, ul.list-group-even-more-flush > li {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+#writeToCouncillorTemplate p {
+  margin-top: 0.7rem;
 }
 
 .dark-text-box {  
